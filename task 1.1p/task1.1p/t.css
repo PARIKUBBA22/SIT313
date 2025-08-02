@@ -1,0 +1,137 @@
+/* <!-- NAVIGATION BAR--> */
+a{
+    text-decoration:none;
+    margin-right:10px;
+}
+
+/* TEXT APPEARING ON IMAGE HOVERING */
+.image-wrapper {
+    position: relative;
+    width: 100%;
+    display: block;
+}
+
+.hove {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.text {
+    display: none;
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    font-size: 30px;
+    color: beige;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.image-wrapper:hover .text {
+    display: block;
+}
+
+/* MY PROFILR PIC */
+#pic{
+    display:flex;
+    justify-content: center;
+    height:100px;
+    transition-property: all;
+    transition-duration: 1s; 
+}
+/* HORIZONTAL LINE */
+hr{
+    
+    width:500px;
+    color: rgb(0, 128, 115);
+
+}
+
+#p2{
+    
+    font-size: 20px;
+    color: rgb(0, 128, 115);
+}
+#c{
+    display:flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    align-items: center;
+    text-align: center; 
+}
+#g{
+    display: flex;
+    justify-content: center;
+}
+#projects{
+    color: rgb(0, 128, 115);
+
+    display:flex;
+    width:1000px;
+    height: 2000px;
+    /* border-style: solid;
+    border-color: rgba(0, 0, 0, 0.477); */
+    border-width: 2px;
+    /* justify-content: center; */
+    flex-direction: column;
+    align-items: center;
+}
+#f{
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+}
+.i{
+    margin-right: 10px;
+}
+@media (max-width:350px ){
+    #f{
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+    
+}
+@media (max-width:350px ) and (min-width: 600px){
+    #f{
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+}
+/* RESPONSIVE GALLERY AND PROJECTS */
+.project-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .project-card img {
+    height: 200px;
+    width: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  }
+  
+  .project-details {
+    max-width: 400px;
+  }
+  
+  .project-details h3 {
+    margin: 0;
+    color: rgb(0, 128, 115);
+    font-size: 20px;
+  }
+  
+  .project-details p {
+    margin-top: 5px;
+    color: #444;
+    font-size: 16px;
+    line-height: 1.4;
+  }
+  
+  
